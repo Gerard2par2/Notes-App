@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 async function getNotes(){
-    const res = await fetch('https://notes-app.pockethost.io/api/collections/nextjsfirstapp/records?page=1&perPage=30',
+    const res = await fetch('https://notes-app.pockethost.io/api/collections/notes/records?page=1&perPage=30',
         {cache :'no-store'}
     );
     const data = await res.json();
