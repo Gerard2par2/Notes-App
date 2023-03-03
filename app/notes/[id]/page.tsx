@@ -1,5 +1,5 @@
 async function getNote(noteId:string){
-    const res = await fetch(`http://127.0.0.1:8090/api/collections/nextjsfirstapp/records/${noteId}`,
+    const res = await fetch(`https://notes-app.pockethost.io/api/collections/nextjsfirstapp/records/${noteId}`,
         {next : {revalidate :10}}
     );
     const data = await res.json();
