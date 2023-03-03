@@ -1,5 +1,5 @@
 async function getNote(noteId:string){
-    const res = await fetch(`https://notes-app.pockethost.io/api/collections/nextjsfirstapp/records/${noteId}`,
+    const res = await fetch(`https://notes-app.pockethost.io/api/collections/notes/records/${noteId}`,
         {next : {revalidate :10}}
     );
     const data = await res.json();
@@ -8,6 +8,7 @@ async function getNote(noteId:string){
 
 export default async function NotePage({params}:any){
     const note = await getNote(params.id);
+    console.log(note);
     return(
         <div className='noteContainer'>
             <h1>Notes/{note.id}</h1>
