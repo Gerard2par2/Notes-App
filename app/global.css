@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(25,25,25);
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+}
+
+nav{
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 2px 2px 20px black;
+    margin: 0px;
+    padding: 1em;;
+}
+
+nav>*{
+    margin: 1em;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+nav a {
+    color:white;
+    text-decoration: solid;
+}
+
+main{
+    padding:1em;
+}
+
+.notesSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.note{
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 1em;
+    box-shadow: 5px 5px 25px black;
+    width: fit-content;
+    padding: 1em;
+    margin: 1em;
+    background-color: rgba(255,255,255,0.02);
+    transition: all 0.5s ease;       
+}
+
+.note *{
+    text-decoration: none;
+    color:white;
+}
+
+.note:hover{
+    background-color: rgba(255,255,255,0.1);
+    padding: 1.5em;
+    margin:0.5em;
+}
